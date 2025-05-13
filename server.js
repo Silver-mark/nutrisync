@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(path.join(__dirname)));
 
 // Handle API routes
-app.use('/api', require('./nutrisync-backend-main/routes'));
+app.use('/api', require('./routes'));
 
 // Serve index.html for all other routes
 app.get('*', (req, res) => {
